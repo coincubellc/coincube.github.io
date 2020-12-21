@@ -637,23 +637,29 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features a {
+  color: #444444;
+  font-weight: bold;
+}
+
+.features a:hover {
+  color: #151515;
+}
+
 .features {
   padding-top: 20px;
 }
 
 .features .high {
-  background-color: green;
-  color: white;
+  background-color: rgba(0, 128, 3, 0.3);
 }
 
 .features .medium {
-  background-color: #ff9906;
-  color: white;
+  background-color: rgba(255, 153, 11, 0.3);
 }
 
 .features .low {
-  background-color: darkred;
-  color: white;
+  background-color: rgba(139, 1, 2, 0.3);
 }
 
 .features .icon {
@@ -666,12 +672,20 @@ section {
   justify-content: center;
   text-align: center;
   padding: 10px;
-  color: white;
 }
 
 /*--------------------------------------------------------------
 # Process
 --------------------------------------------------------------*/
+.process a {
+  color: #444444;
+  font-weight: bold;
+}
+
+.process a:hover {
+  color: #151515;
+}
+
 .process .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
