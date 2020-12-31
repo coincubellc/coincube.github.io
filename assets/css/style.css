@@ -1,5 +1,5 @@
 /**
-* Template Name: Gp - v2.1.0
+* Template Name: Gp - v2.2.0
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -14,11 +14,12 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: #343a40;
+  font-weight: bold;
 }
 
 a:hover {
-  color: #ffd584;
+  color: #4b545c;
   text-decoration: none;
 }
 
@@ -125,8 +126,7 @@ h6 {
   padding: 15px 0;
 }
 
-#header.header-scrolled,
-#header.header-inner-pages {
+#header.header-scrolled, #header.header-inner-pages {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -182,9 +182,7 @@ h6 {
   font-weight: 600;
 }
 
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #ffc451;
 }
 
@@ -221,9 +219,7 @@ h6 {
   color: #151515;
 }
 
-.nav-menu .drop-down ul a:hover,
-.nav-menu .drop-down ul .active > a,
-.nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #151515;
   background: #ffc451;
 }
@@ -343,9 +339,7 @@ h6 {
   outline: none;
 }
 
-.mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: #151515;
   text-decoration: none;
   background: #ffc451;
@@ -408,7 +402,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bitcoin-gold-2020.jpg") top center;
+  background: url("../img/life-preserver.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -469,7 +463,19 @@ h6 {
   line-height: 1;
   font-size: 20px;
   line-height: 26px;
+}
+
+#hero .icon-box h3 a {
   color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#hero .icon-box h3 a:hover {
+  color: #ffc451;
+}
+
+#hero .icon-box:hover {
+  border-color: #ffc451;
 }
 
 @media (min-width: 1024px) {
@@ -566,86 +572,9 @@ section {
   margin-bottom: 0;
 }
 
-.about .about-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #ffc451;
-  background: #ffc451;
-  color: #151515;
-}
-
-.about .about-btn:hover {
-  background: #ffcd6b;
-  border-color: #ffcd6b;
-  color: #151515;
-}
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  padding-top: 20px;
-}
-
-.clients .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.clients .owl-item img {
-  width: 70%;
-  opacity: 0.5;
-  transition: 0.3s;
-  -webkit-filter: grayscale(100);
-  filter: grayscale(100);
-}
-
-.clients .owl-item img:hover {
-  -webkit-filter: none;
-  filter: none;
-  opacity: 1;
-}
-
-.clients .owl-nav,
-.clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.clients .owl-dot.active {
-  background-color: #ffc451 !important;
-}
-
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features a {
-  color: #444444;
-  font-weight: bold;
-}
-
-.features a:hover {
-  color: #151515;
-}
-
 .features {
   padding-top: 20px;
 }
@@ -662,6 +591,28 @@ section {
   background-color: rgba(139, 1, 2, 0.3);
 }
 
+.features .icon-box {
+  padding-left: 15px;
+}
+
+.features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+
+.features .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #ffc451;
+}
+
+.features .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
 .features .icon {
   margin: 0 auto;
   width: 64px;
@@ -675,26 +626,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Process
+# ira
 --------------------------------------------------------------*/
-.process a {
-  color: #444444;
-  font-weight: bold;
-}
-
-.process a:hover {
-  color: #151515;
-}
-
-.process .icon-box {
+.ira .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #343a40;
+  color: #fff;
 }
 
-.process .icon-box .icon {
+.ira .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -707,30 +650,42 @@ section {
   transition: 0.3s;
 }
 
-.process .icon-box .icon i {
+.ira .icon-box .icon i {
   color: #151515;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.process .icon-box h4 {
+.ira .icon-box a {
+  color: #fff;
+}
+
+.ira .icon-box a:hover {
+  color: #ffc451;
+}
+
+.ira .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.process .icon-box h4 a {
-  color: #151515;
+.ira .icon-box h4 a {
+  color: #fff;
   transition: ease-in-out 0.3s;
 }
 
-.process .icon-box p {
+.ira .icon-box h4 a:hover {
+  color: #ffc451;
+}
+
+.ira .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.process .icon-box:hover {
+.ira .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
@@ -740,8 +695,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/digital-gold.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/life-preserver.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -777,126 +731,69 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Bullion
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
+.bullion .icon-box {
   text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #343a40;
+  color: #fff;
 }
 
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 3px;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #151515;
+.bullion .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
   background: #ffc451;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(21, 21, 21, 0.6);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(21, 21, 21, 0.6);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
+  border-radius: 4px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.bullion .icon-box .icon i {
+  color: #151515;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.bullion .icon-box a {
+  color: #fff;
+}
+
+.bullion .icon-box a:hover {
   color: #ffc451;
 }
 
-.portfolio .portfolio-wrap:hover::before {
-  opacity: 1;
+.bullion .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
+.bullion .icon-box h4 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
+.bullion .icon-box h4 a:hover {
+  color: #ffc451;
+}
+
+.bullion .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.bullion .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
 }
 
 /*--------------------------------------------------------------
@@ -961,7 +858,8 @@ section {
 
 .counts .image {
   background: url("../img/bitcoin-award.jpg") center center no-repeat;
-  background-size: contain;
+  background-size: cover;
+  min-height: 400px;
 }
 
 @media (max-width: 991px) {
@@ -1117,21 +1015,22 @@ section {
 }
 
 .team .member .social a {
+  transition: color 0.3s;
+  color: #fff;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: 4px;
   width: 36px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(52, 58, 64, 0.8);
   display: inline-block;
   transition: ease-in-out 0.3s;
-  color: #fff;
-  background: #ffc451;
+  color: #ffc451;
 }
 
 .team .member .social a:hover {
   color: #fff;
-  background: black;
+  background: #ffc451;
 }
 
 .team .member .social i {
@@ -1174,14 +1073,6 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
-}
-
-.contact .info a {
-  color: #484848;
-}
-
-.contact .info a:hover {
-  color: black;
 }
 
 .contact .info i {
@@ -1379,28 +1270,28 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# bullion Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.bullion-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-container {
+.bullion-details .bullion-details-container {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+.bullion-details .bullion-details-carousel {
   position: relative;
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav,
-.portfolio-details .portfolio-details-carousel .owl-dots {
+.bullion-details .bullion-details-carousel .owl-nav,
+.bullion-details .bullion-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.bullion-details .bullion-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 12px;
@@ -1409,11 +1300,11 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.bullion-details .bullion-details-carousel .owl-dot.active {
   background-color: #ffc451 !important;
 }
 
-.portfolio-details .portfolio-info {
+.bullion-details .bullion-info {
   padding: 30px;
   position: absolute;
   right: 0;
@@ -1423,7 +1314,7 @@ section {
   z-index: 2;
 }
 
-.portfolio-details .portfolio-info h3 {
+.bullion-details .bullion-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1431,36 +1322,36 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.bullion-details .bullion-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.bullion-details .bullion-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.bullion-details .bullion-description {
   padding-top: 50px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.bullion-details .bullion-description h2 {
   width: 50%;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.bullion-details .bullion-description p {
   padding: 0 0 0 0;
 }
 
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-description h2 {
+  .bullion-details .bullion-description h2 {
     width: 100%;
   }
-  .portfolio-details .portfolio-info {
+  .bullion-details .bullion-info {
     position: static;
     margin-top: 30px;
   }
@@ -1474,6 +1365,27 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+}
+
+#footer a {
+  color: #ffc451;
+}
+
+#footer a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
+
+#footer .modal-title {
+  color: #343a40;
+}
+
+#footer .modal-body {
+  color: #343a40;
+}
+
+#footer .modal-body h1 {
+  font-size: 20px;
 }
 
 #footer .footer-top {

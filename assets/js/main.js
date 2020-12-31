@@ -1,5 +1,5 @@
 /**
-* Template Name: Gp - v2.1.0
+* Template Name: Gp - v2.2.0
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -15,10 +15,6 @@
       });
     }
   });
-
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
